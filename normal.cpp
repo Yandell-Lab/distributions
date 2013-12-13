@@ -30,19 +30,19 @@ double normal::dnorm(void){
 
   try{
     /// double first term
-    //    double fet    = 1.0 / (sd * sqrt(2.0*PI));
+        double fet    = 1.0 / (sd * sqrt(2.0*PI));
     
-    std::cerr << "fet " << fet << endl;
+	// std::cerr << "fet " << fet << endl;
 
     /// double e power top
-    //    double tet    = pow((x - mean), 2);
+        double tet    = pow((x - mean), 2);
 
-    std::cerr << "tet " << tet << endl;
+	//    std::cerr << "tet " << tet << endl;
 
     /// double e power bottom
-    //    double bet    = 2.0 * pow(sd, 2);
-
-    std::cerr << "bet " << bet << endl;
+        double bet    = 2.0 * pow(sd, 2);
+	
+	//    std::cerr << "bet " << bet << endl;
 
     /// double second term
     double sec    = 1.0 / pow(EU, (tet/bet));
