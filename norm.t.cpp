@@ -1,4 +1,4 @@
-#include "lib/normal.hpp"
+#include "normal.hpp"
 #include <iostream>
 
 using namespace std;
